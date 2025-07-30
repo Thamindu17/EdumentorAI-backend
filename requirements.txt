@@ -1,0 +1,7 @@
+langchain
+openai
+google-generativeai
+python-dotenv
+fastapi
+uvicorn
+langchain-google-genai
