@@ -1,8 +1,8 @@
 from langchain_core.prompts import PromptTemplate
-from agents.langchain_gemini import get_gemini_model
+from agents.llm_provider import get_llm_model
 
 def generate_feedback(student_answer: str, expected_answer: str) -> str:
-    llm = get_gemini_model()
+    llm = get_llm_model()
 
     prompt = PromptTemplate(
         input_variables=["student_answer", "expected_answer"],

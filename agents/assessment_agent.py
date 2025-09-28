@@ -1,8 +1,8 @@
 from langchain_core.prompts import PromptTemplate
-from agents.langchain_gemini import get_gemini_model
+from agents.llm_provider import get_llm_model
 
 def generate_exam_questions(topic: str, question_type: str = "mixed", num_questions: int = 5) -> str:
-    llm = get_gemini_model()
+    llm = get_llm_model()
 
     prompt = PromptTemplate(
         input_variables=["topic", "question_type", "num_questions"],

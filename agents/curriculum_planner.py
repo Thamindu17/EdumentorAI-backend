@@ -1,10 +1,10 @@
 # agents/curriculum_planner.py
 from datetime import datetime
 from langchain_core.prompts import PromptTemplate
-from agents.langchain_gemini import get_gemini_model
+from agents.llm_provider import get_llm_model
 
 def get_curriculum_plan(subject, hours_per_day, exam_date):
-    llm = get_gemini_model()
+    llm = get_llm_model()
 
     today = datetime.now().date()
     exam = datetime.strptime(exam_date, "%Y-%m-%d").date()
