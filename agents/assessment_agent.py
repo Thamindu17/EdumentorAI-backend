@@ -11,6 +11,7 @@ def generate_exam_questions(topic: str, question_type: str = "mixed", num_questi
             "questions for the topic '{topic}'. Make sure questions are relevant and appropriately challenging for high school level."
         )
     )
+    
 
     chain = prompt | llm
     result = chain.invoke({
