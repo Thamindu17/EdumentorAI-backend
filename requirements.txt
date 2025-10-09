@@ -1,7 +1,9 @@
 langchain
-openai
-google-generativeai
+langchain-groq
+langchain-huggingface
 python-dotenv
 fastapi
 uvicorn
-langchain-google-genai
+huggingface_hub
+streamlit
+requests
